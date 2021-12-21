@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ventas</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/bienvenido.css">
+</head>
+<body>
+    <center>
+        <h1>Ventas</h1>
+        <ul class="menu">
+            <li><a href="volverDeVentas.html">Volver</a></li>      
+        </ul>
+        <br>
+
+        <label>Nro Comprobante</label> <input type="number" id="nroComprobante" readonly="readonly">
+        <br><br>
+        
+        <label>Seleccionar Cliente</label> <select id="cajaCliente"></select>
+        <br><br><br>
+
+        <label>Seleccionar Articulo</label> <select id="cajaArticulo"></select>
+        <br><br>
+
+        <label>Cantidad de Articulos</label> <input type="number" id="cantidad">
+        <button id="agregar" onclick="agregarAlCarrito()">Agregar al carrito</button>
+        <br><br>
+        
+        <label>Total Articulo: <label id="totalArticulo"></label>  </label>
+        <br><br>
+
+        <div id="carrito"></div>
+        <br><br>
+
+        <button id="comprarArticulo" onclick="comprar()">Comprar</button>
+        <br><br>
+        <label>Total A Pagar: <label id="totalFinal"></label>  </label>
+    </center>
+    <script src="js/ventas.js"></script>
+</body>
+</html>

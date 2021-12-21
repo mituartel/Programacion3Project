@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/bienvenido.css">
+</head>
+
+<body>  
+    <center>
+        <h1 id="tituloClienteOp"></h1>
+        <ul class="menu">
+            <li><a href="articulos.html">Volver</a></li>        
+        </ul>
+        <br>
+        <label>Codigo</label>
+        <input type="text" id="Codigo">
+        <br><br>
+
+        <label>Nombre</label>
+        <input type="text" id="Nombre">
+        <br><br>
+
+        <label>Cantidad</label>
+        <input type="number" id="Cantidad">
+        <br><br>
+
+        <label>Precio Costo</label>
+        <input type="number" id="PrecioCosto">
+        <br><br>
+
+        <label>Precio Venta</label>
+        <input type="number" id="PrecioVenta">
+        <br><br>
+
+        <label>Venta Minima</label>
+        <input type="number" id="VentaMinima">
+        <br><br>
+
+        <label>Stock Negativo</label>
+        <input type="checkbox" id="chkStockNegativo">
+        <br><br>      
+ 
+        <label>Tipo de Articulo</label>
+        <select name="" id="cajaTipoArticulo"> 
+        </select>
+        <br><br>
+     <button id ="btnAceptar" onclick="aceptar()"></button>
+    </center>
+    <script src="js/articulosOp.js"></script>
+</body>
+
+</html>

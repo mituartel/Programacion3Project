@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pais</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/bienvenido.css">
+</head>
+<body>
+    <center>   
+        <h1 id="titulo">Pais</h1>
+        <ul class="menu">
+            <li><a href="ubicacion.html"><b>Volver</b></a></li>
+        </ul>
+        <br><br>
+        
+        <label> <b>Nombre del Pais</b> </label><br>
+        <input type="text" id="paisIngresado">
+        <br><br>
+
+        <label>Nuevo Nombre</label><br>
+        <input type="text" id="nuevoNombre">
+        <br><br>
+
+        <button id="btnAgregarPais" onclick="agregarPais()">Agregar</button>
+        <button id="btnActualizarPais" onclick="actualizarPais()">Actualizar</button>
+        <button id="btnModificarPais" onclick="modificarPais()">Modificar</button>
+        <button id="btnBorrarPais" onclick="borrarPais()">Borrar</button>
+        <br><br><br>
+        <ol id="lista">
+            <div id="listaPaises"></div>     
+        </ol>
+    </center>
+    <script src="js/ubicaciones.js"></script>
+</body>
+</html>

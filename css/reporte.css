@@ -1,0 +1,44 @@
+h1
+{
+  color:#369681 ;
+}
+
+#main-container
+{
+    margin: 50px auto;
+    width: 600px;
+}
+
+table
+{
+    background-color: rgba(5, 172, 108, 0.548);
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td
+{
+    font-weight: bold;
+    padding: 20px;
+}
+
+thead
+{
+    font-weight: bold;
+    background-color: #246355;
+    border-bottom: solid 5px #0F362D;
+    color: white;
+}
+
+tr:nth-child(even)
+{
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+tr:hover td
+{
+    background-color: #369681;
+    color: white;
+}

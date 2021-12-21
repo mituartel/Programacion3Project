@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Provincia</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/bienvenido.css">
+</head>
+<body>
+    <script>
+        window.onload = main;
+        async function main() 
+        {
+            const url = "http://localhost:3000";
+            const cajaPais = document.getElementById("caja");
+            
+            let dataJson;
+    
+             await fetch(`${url}/pais`)
+             .then((response) => response.json())
+             .then((data) => dataJson = data)
+
+             dataJson.forEach(element => {
+                var opcion = document.createElement('option');
+                opcion.value = element.id;
+                opcion.text = element.nombre;
+                cajaPais.appendChild(opcion);
+            });         
+        }
+    </script>
+    <center>
+        <h1>Provincia</h1>
+        <ul class="menu">
+            <li><a href="ubicacion.html">Volver</a></li>
+        </ul>
+        <br><br>
+
+        
+        <label>Nombre Provincia:</label>
+        <input type="text" id="provinciaIngresado">
+        <br><br>
+
+        <label>Nuevo Nombre:</label>
+        <input type="text" id="nuevoNombre">
+        <br><br>
+      
+        <label>Pais:</label>
+        <select name="select" id="caja">
+        </select><br><br>
+
+        <button id="btnAgregarProvincia" onclick="agregarProvincia()">Agregar</button>
+        <button id="btnActualizarProvincia" onclick="actualizarProvincia()">Actualizar</button>
+        <button id="btnModificarProvincia" onclick="modificarProvincia()">Modificar</button>
+        <button id="btnBorrarProvincia" onclick="borrarProvincia()">Borrar</button>
+        <br><br><br>
+        
+        <ol id="lista">
+        <div id="listaProvincias"></div>
+        </ol>
+    </center>
+    <script src="js/ubicaciones.js"></script>
+
+</body>
+</html>

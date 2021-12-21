@@ -1,0 +1,91 @@
+/*----- Para el Icono Del Login -----*/
+.profile-img-card 
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*----- Parte de atras de la pantalla y para el estilo y tamaño de las letras -----*/
+body 
+{
+    /*background-image:url("https://www.wallpapertip.com/wmimgs/49-494841_interiors-of-beautiful-homes.jpg");*/
+    background-position:center;
+    background-size:cover;
+    -webkit-font-smoothing: antialiased;
+    font: normal 14px Roboto,arial,sans-serif;
+    font-family: 'Arial', cursive!important;
+}
+
+/*----- Titulo del Login -----*/
+h4 
+{ 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+/*----- Se lo puede quitar no es necesario -----*/
+.container 
+{
+    padding: 110px;
+}
+/*----- Se lo puede quitar no es necesario -----*/
+::placeholder /* Chrome, Firefox, Opera, Safari 10.1+ */
+{ 
+    color: #ffffff!important;
+    opacity: 1; /* Firefox */
+    font-size:18px!important;
+}
+
+/*----- Para el Form de Login -----*/
+.form-login 
+{
+    background-color: rgba(0,0,0,0.55);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    color:white;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+/*----- Para los Campos de Texto -----*/
+.form-control
+{
+    background:transparent!important;
+    color:white!important;
+    font-size: 18px!important;
+    border-radius: 10px;
+}
+.text-white
+{
+    color: rgb(255, 255, 255)!important;
+}
+
+/*----- Para el Boton Iniciar Sesion -----*/
+.wrapper 
+{
+    text-align: center;
+}
+
+/*----- Para el Pie de Pagina -----*/
+.footer
+{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#minimo
+{
+    font-size: 62.5%;
+}

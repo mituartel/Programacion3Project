@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Departamento</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/bienvenido.css">
+</head>
+<body>
+    <script>
+        window.onload = main;
+        async function main() 
+        {
+            const url = "http://localhost:3000";
+            const cajaPais = document.getElementById("caja");
+            
+            let dataJson;
+    
+             await fetch(`${url}/provincia`)
+             .then((response) => response.json())
+             .then((data) => dataJson = data)
+
+             dataJson.forEach(element => {
+                var opcion = document.createElement('option');
+                opcion.value = element.id;
+                opcion.text = element.nombre;
+                cajaPais.appendChild(opcion);
+            });         
+        }
+    </script>
+    <center>
+        <h1>Departamento</h1>
+        <ul class="menu">
+            <li><a href="ubicacion.html">Volver</a></li>
+        </ul>
+        <br><br>
+
+        
+        <label>Nombre Departamento:</label>
+        <input type="text" id="departamentoIngresado">
+        <br><br>
+
+        <label>Nuevo Nombre:</label>
+        <input type="text" id="nuevoNombre">
+        <br><br>
+      
+        <label>Provincia:</label>
+        <select name="select" id="caja">
+        </select><br><br>
+
+        <button id="btnAgregarDepartamento" onclick="agregarDepartamento()">Agregar</button>
+        <button id="btnActualizarDepartamento" onclick="actualizarDepartamento()">Actualizar</button>
+        <button id="btnModificarDepartamento" onclick="modificarDepartamento()">Modificar</button>
+        <button id="btnBorrarDepartamento" onclick="borrarDepartamento()">Borrar</button>
+        <br><br><br>
+        
+        <ol id="lista">
+        <div id="listaDepartamentos"></div>
+        </ol>
+    </center>
+    <script src="js/ubicaciones.js"></script>
+
+</body>
+</html>

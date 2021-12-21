@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Configuracion</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/bienvenido.css">
+</head>
+<body>
+    <center>
+        <h1 >Configuracion del Sistema</h1>
+        <ul class="menu">
+            <li><a href="bienvenido.html">Volver</a></li>        
+        </ul>
+        <br>
+        <h2 id="nombreEmpresa"></h2>
+        <br>
+
+        <h3>Nombre de la empresa : </h3>
+
+        <label>Nuevo Nombre:</label>
+        <input type="text" id="nuevoNombre">
+        <button id="btnNombre" onclick="cambiarNombre()">Cambiar</button>
+        <br><br>
+
+        <label id="nroComprobante">Ultimo nro de Comprobante: </label>
+        <br><br>
+      
+        <h3>Tipo de cuenta : </h3>
+        <label>DEMO Activada</label>
+        <input type="checkbox" id="chkDemo">
+        <br><br>
+
+        <h3>Uso de decimales : </h3>
+        <label>Activado</label>
+        <input type="checkbox" id="chkDecimal">
+        <br><br>
+
+        <h3>Pais predeterminado : </h3>
+        <label>Pais:</label>
+        <select name="select" id="cajaPais">
+        </select><br><br>
+
+        <h3>Provincia predeterminada : </h3>
+        <label>Provincia:</label>
+        <select name="select" id="cajaProvincia">
+        </select><br><br>
+
+        <h3>Departamento predeterminado : </h3>
+        <label>Departamento:</label>
+        <select name="select" id="cajaDepartamento">
+        </select><br><br>
+
+        <h3>Localidad predeterminada : </h3>
+        <label>Localidad:</label>
+        <select name="select" id="cajaLocalidad">
+        </select><br><br>
+
+        <button id="btnGuardar" onclick="guardarCambios()">Guardar Datos</button>
+
+    </center>
+    <script src="js/configuracion.js"></script>
+</body>
+</html>
